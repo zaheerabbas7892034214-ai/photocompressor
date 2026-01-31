@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Photo Compressor – KB Size</string>
+    <string name="select_image">Select Image</string>
+    <string name="target_kb">Target Size (KB)</string>
+    <string name="compress">Compress</string>
+    <string name="save_to_gallery">Save to Gallery</string>
+    <string name="share">Share</string>
+    <string name="original_size">Original: %s KB</string>
+    <string name="compressed_size">Compressed: %s KB</string>
+    <string name="compression_quality">Quality: %d%%</string>
+    <string name="compression_scale">Scale: %.2f</string>
+    <string name="approximate">≈ Approximate</string>
+    <string name="saved_successfully">Image saved successfully</string>
+    <string name="error_occurred">Error occurred</string>
+    <string name="pro_version">Pro Version</string>
+    <string name="unlock_pro">Unlock Pro</string>
+    <string name="pro_active">Pro Active ✅</string>
+    <string name="restore_purchase">Restore Purchase</string>
+</resources>
