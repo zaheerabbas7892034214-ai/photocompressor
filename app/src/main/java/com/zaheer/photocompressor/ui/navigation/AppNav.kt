@@ -19,7 +19,8 @@ sealed class Screen(val route: String) {
 @Composable
 fun AppNav(
     viewModel: CompressorViewModel,
-    billingManager: BillingManager
+    billingManager: BillingManager,
+    onUnlockPro: () -> Unit
 ) {
     val navController = rememberNavController()
     val uiState by viewModel.uiState.collectAsState()
@@ -39,7 +40,8 @@ fun AppNav(
                 billingState = billingState,
                 onNavigateToResult = {
                     navController.navigate(Screen.Result.route)
-                }
+                },
+                onUnlockPro = onUnlockPro
             )
         }
         

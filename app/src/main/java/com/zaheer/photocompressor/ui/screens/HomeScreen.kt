@@ -28,7 +28,8 @@ fun HomeScreen(
     billingManager: BillingManager,
     isProActive: Boolean,
     billingState: BillingState,
-    onNavigateToResult: () -> Unit
+    onNavigateToResult: () -> Unit,
+    onUnlockPro: () -> Unit
 ) {
     var targetKb by remember { mutableStateOf("") }
     
@@ -212,9 +213,7 @@ fun HomeScreen(
             
             if (!isProActive) {
                 Button(
-                    onClick = { 
-                        // Will be handled in MainActivity
-                    },
+                    onClick = onUnlockPro,
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text("Unlock Pro")

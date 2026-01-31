@@ -42,7 +42,10 @@ class MainActivity : ComponentActivity() {
                 ) {
                     AppNav(
                         viewModel = viewModel,
-                        billingManager = billingManager
+                        billingManager = billingManager,
+                        onUnlockPro = {
+                            billingManager.launchPurchaseFlow(this@MainActivity)
+                        }
                     )
                 }
             }
